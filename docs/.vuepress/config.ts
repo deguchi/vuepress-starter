@@ -20,7 +20,7 @@ export default defineUserConfig<DefaultThemeOptions>({
             { text: 'テスト', link: '/test' },
         ]
     },
-    theme: path.resolve(__dirname, './theme'),
+    // theme: path.resolve(__dirname, './theme'),
     plugins: [
         ['@vuepress/plugin-search']
     ],
