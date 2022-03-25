@@ -7,7 +7,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   lang: 'ja-JP',
   title: 'VuePressのサンプル',
   description: 'Just playing around',
-  base: '/',
+  base: '/vuepress-starter/',
   // theme and its config
 //   theme: '@vuepress/theme-default',
 //   themeConfig: {
