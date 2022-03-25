@@ -14,3 +14,6 @@ npm run doc:dev
 npm run doc:build
 ```
 
+## document
+
+https://v2.vuepress.vuejs.org/reference/default-theme/extending.html#layout-slots  
