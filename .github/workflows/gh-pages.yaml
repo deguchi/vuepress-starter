@@ -16,21 +16,8 @@ jobs:
           # choose node.js version to use
           node-version: '17'
 
-      # cache node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        id: npm-cache
-        with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/npm.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
-
-      # install dependencies if the cache did not hit
       - name: Install dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
-        run: npm --frozen-lockfile
+        run: npm install
 
       # run build script
       - name: Build VuePress site
